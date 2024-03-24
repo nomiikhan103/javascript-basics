@@ -39,7 +39,7 @@ tinderuser.id = "123ab";
 tinderuser.email = "some@gmail.com";
 tinderuser.islogin = true;
 
-console.log(tinderuser);
+// console.log(tinderuser);
 
 const regularuser = {
   email: "asc@gmail.com",
@@ -62,4 +62,39 @@ const obj2 = { 3: "c", 4: "d" };
 
 const obj3 = Object.assign({}, obj1, obj2);
 
-console.log(obj3);
+// console.log(obj3);
+
+const user = [
+  {
+    id: 1,
+    email: "a@gmail.com",
+  },
+  {
+    id: 2,
+    email: "s@gmail.com",
+  },
+];
+
+user[0].email;
+
+// console.log(user[0]);
+
+// console.log(tinderuser);
+
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+
+// console.log(Object.entries(tinderuser));
+
+// console.log(tinderuser.hasOwnProperty("islog"));
+
+const course = {
+  coursename: "js in urdu",
+  price: "99",
+  instructorname: "hitash",
+};
+
+course.coursename;
+const { instructorname: instructor, price } = course;
+
+console.log(instructor, price);
